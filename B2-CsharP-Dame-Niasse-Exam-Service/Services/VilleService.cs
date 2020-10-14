@@ -7,18 +7,18 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
 {
     
     
-        public class CommuneService
+        public class VilleService
         {
 
             private DemandeALutilisateur _demandeALutilisateur;
 
-            public CommuneService(DemandeALutilisateur demandealutilisateur)
+            public VilleService(DemandeALutilisateur demandealutilisateur, Service.DepartementService _DepartementService)
             {
                 this._demandeALutilisateur = demandealutilisateur;
             }
-            public Commune ajouterCommune()
+            public Ville ajouterVille()
             {
-                Commune c = new Commune();
+                Ville c = new Ville();
                 c.Nom = _demandeALutilisateur.saisieNom("Quel est le nom de votre ville ?");
                 c.CodePost = _demandeALutilisateur.saisieEntier("Quel est de code postal ?");
                 c.NbHab = _demandeALutilisateur.saisieEntier("Combie y a-t-il d'habitants ?");
@@ -26,10 +26,10 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
                 return c;
             }
 
-            public void calculNbtotalHabs(List<Commune> listcommunes)
+            public void calculNbtotalHabs(List<Ville> listvilles)
             {
                 int Nbtot = 0;
-                foreach (Commune c in listcommunes)
+                foreach (Ville c in listvilles)
                 {
                     Nbtot = Nbtot + c.NbHab;
                 }
@@ -40,10 +40,10 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
                 Console.WriteLine(message);
             }
 
-            public void affiche(List<Commune> listcommunes)
+            public void affiche(List<Ville> listvilles)
             {
-                Console.WriteLine("Liste des communes créées:");
-                foreach (Commune c in listcommunes)
+                Console.WriteLine("Liste des villes créées:");
+                foreach (Ville c in listvilles)
                 {
                     var culture = CultureInfo.GetCultureInfo("en-GB");
                     string nb = string.Format(culture, "{0:n0}", c.NbHab);

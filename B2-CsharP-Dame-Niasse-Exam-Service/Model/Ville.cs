@@ -5,7 +5,7 @@ using System.Text;
 namespace B2_CsharP_Dame_Niasse_Exam_Service
 
 {
-    public class Commune
+    public class Ville
     {
         public string Nom;
         public int CodePost;
