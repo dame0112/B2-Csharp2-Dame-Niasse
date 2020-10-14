@@ -1,0 +1,13 @@
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.exe
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.deps.json
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.runtimeconfig.json
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.runtimeconfig.dev.json
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.dll
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\bin\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.pdb
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.csprojAssemblyReference.cache
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.AssemblyInfoInputs.cache
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.AssemblyInfo.cs
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.csproj.CoreCompileInputs.cache
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.dll
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.pdb
+C:\Users\niass\source\repos\B2-CsharP-Dame-Niasse-Exam-Service\B2-CsharP-Dame-Niasse-Exam-Service\obj\Debug\netcoreapp3.1\B2-CsharP-Dame-Niasse-Exam-Service.genruntimeconfig.cache
