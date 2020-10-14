@@ -13,13 +13,13 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services.Service
         private VilleService _VilleService;
         private List<Habitants> ListeHabitants = new List<Habitants>();
 
-        public HabitantService(DemandeALutilisateur demandeALutilisateur, VilleService communeService)
+        public HabitantService(DemandeALutilisateur demandeALutilisateur, VilleService VilleService)
         {
             _DemandeALutilisateur = demandeALutilisateur;
-            _VilleService = communeService;
+            _VilleService = VilleService;
         }
 
-        public void AfficheHabitans()
+        public void AfficheHabitants()
         {
             foreach (Habitants h in ListeHabitants)
             {
@@ -28,9 +28,9 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services.Service
 
                 if (h.Villes != null)
                 {
-                    foreach (Ville c in h.Villes)
+                    foreach (Ville v in h.Villes)
                     {
-                        Console.WriteLine(c.Nom);
+                        Console.WriteLine(v.Nom);
                     }
                 }
             }
