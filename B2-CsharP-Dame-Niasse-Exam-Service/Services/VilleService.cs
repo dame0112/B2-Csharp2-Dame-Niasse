@@ -7,33 +7,39 @@ using B2_CsharP_Dame_Niasse_Exam_Service.Services.Service;
 
 namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
 {
-    
-    
+
         public class VilleService
         {
 
             private DemandeALutilisateur _demandeALutilisateur;
-        private DepartementService _DepartementService;
-        private List<Ville> ListeVilles = new List<Ville>();
+            private DepartementService _departementService;
 
-        public VilleService(DemandeALutilisateur demandealutilisateur, Service.DepartementService _DepartementService)
+            public VilleService(DemandeALutilisateur demandealutilisateur, DepartementService departementService)
             {
                 this._demandeALutilisateur = demandealutilisateur;
+                this._departementService = departementService;
             }
             public Ville ajouterVille()
             {
-                Ville v = new Ville();
-                v.Nom = _demandeALutilisateur.saisieNom("Quel est le nom de votre ville ?");
-                v.CodePost = _demandeALutilisateur.saisieEntier("Quel est de code postal ?");
-                v.NbHab = _demandeALutilisateur.saisieEntier("Combie y a-t-il d'habitants ?");
+
+               Ville v = new Ville();
+               v.Nom = _demandeALutilisateur.saisieNom("Quel est le nom de votre ville ?");
+               v.CodePost = _demandeALutilisateur.saisieEntier("Quel est de code postal ?");
+               v.NbHab = _demandeALutilisateur.saisieEntier("Combie y a-t-il d'habitants ?");
+
+
+
+
 
                 return v;
             }
 
-            public void calculNbtotalHabs(List<Ville> listvilles)
+
+
+            public void calculNbtotalHabs(List<Ville> listVille)
             {
                 int Nbtot = 0;
-                foreach (Ville v in listvilles)
+                foreach (Ville v in listVille)
                 {
                     Nbtot = Nbtot + v.NbHab;
                 }
@@ -43,11 +49,12 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
                 string message = "Nombre total d'habitants: " + nb;
                 Console.WriteLine(message);
             }
-
-            public void affiche(List<Ville> listvilles)
+            public void affiche(List<Ville> listVille, List<Departement> listdepartement)
             {
-                Console.WriteLine("Liste des villes créées:");
-                foreach (Ville v in listvilles)
+                Console.WriteLine("Liste des villes :");
+
+
+                foreach (Ville v  in listVille)
                 {
                     var culture = CultureInfo.GetCultureInfo("en-GB");
                     string nb = string.Format(culture, "{0:n0}", v.NbHab);
@@ -57,23 +64,13 @@ namespace B2_CsharP_Dame_Niasse_Exam_Service.Services
                     Console.WriteLine(message_p1);
                     Console.WriteLine(message_p2);
                 }
-
-        }
-        public void AfficheVilles()
-        {
-            foreach (Ville v in ListeVilles)
-            {
-               
-                Console.WriteLine("Les departements: ");
-
-                if (d.Departement != null)
+                Console.WriteLine("Departements:");
+                foreach (Departement d in listdepartement)
                 {
-                    foreach (Departement d in v.Departement)
-                    {
-                        Console.WriteLine(v.Nom);
-                    }
+                    string message = "Nom: " + d.nom + ", code: " + d.numD;
+                    Console.WriteLine(message);
                 }
+
             }
         }
-    }
     }
